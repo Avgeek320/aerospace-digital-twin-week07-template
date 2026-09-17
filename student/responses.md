@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: dd466b20-b9e4-4877-bf60-c6b0f1baba07
 
-- Record revision: 916
+- Record revision: 1182
 
-- Model hash: fnv1a-adee3cf8
+- Model hash: fnv1a-596d5cb5
 
-- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: claim, reflection, aiUse
 
 ## Supplied setup (instructor supplied)
 
@@ -81,7 +81,14 @@ wing and body pitching moment, CG, drive opposite with elevator input
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.
 
 **Student response:**
-_Missing — no response supplied._
+```
+v=20m/s
+
+q infinity = 1/2 pv^2=0.5x1.225x20=245Pa
+delta Cm = -0.8x-0.087266 = 0.069813
+M elevator = 245 x 16 x1.5 x0.069813 = 410.501
+q dot = -339.499/ 5000= -0.067900
+```
 
 ### claim
 **Prompt:** What do your computed results support at the stated condition? Include a limitation.
@@ -116,7 +123,7 @@ The recorded model JSON/expression source follows exactly as supplied. It is not
       "expressions": [
         {
           "name": "requiredMoment",
-          "expression": "",
+          "expression": "pitchInertia * requestedAcceleration - competingMoment",
           "unit": "N*m"
         }
       ]
@@ -126,17 +133,17 @@ The recorded model JSON/expression source follows exactly as supplied. It is not
       "expressions": [
         {
           "name": "dynamicPressure",
-          "expression": "",
+          "expression": "0.5 * density * airspeed * airspeed",
           "unit": "Pa"
         },
         {
           "name": "deltaCm",
-          "expression": "",
+          "expression": "elevatorDerivative * elevatorAngle",
           "unit": "1"
         },
         {
           "name": "deltaMoment",
-          "expression": "",
+          "expression": "dynamicPressure * referenceArea * referenceChord * deltaCm",
           "unit": "N*m"
         }
       ]
@@ -147,11 +154,183 @@ The recorded model JSON/expression source follows exactly as supplied. It is not
 
 ## Recorded verification status
 
-No verification record was supplied.
+Recorded as passed for the submitted model hash.
+
+- Checked at: 2026-09-17T04:54:33.956Z
+- Detail: Student artifact passed demand, baseline elevator, quadratic speed, and neutral-deflection checks.
 
 ## Recorded model runs
 
-_Missing — no model runs supplied._
+### Run 1
+- Recorded: 2026-09-17T04:53:06.668Z
+- Run ID: 206493e7-17d6-4f8e-b66c-9acdbbf8bc07
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
+
+### Run 2
+- Recorded: 2026-09-17T04:53:20.220Z
+- Run ID: 655d47bf-cbfc-4c2b-87e4-35952ff170a7
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=750 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
+
+### Run 3
+- Recorded: 2026-09-17T04:53:26.738Z
+- Run ID: eb8f9f60-f0f4-42cb-884b-f2bbf8911e1f
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=245 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=410.5014400690663 N*m`
+
+### Run 4
+- Recorded: 2026-09-17T04:53:45.356Z
+- Run ID: e1ebfd0c-2e91-4b6d-a2ee-5035468c7f89
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=245 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=410.5014400690663 N*m`
+
+### Run 5
+- Recorded: 2026-09-17T04:53:49.510Z
+- Run ID: af5573cf-1675-438a-83f5-7b267949acbb
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0 1`; `deltaMoment=0 N*m`
+
+### Run 6
+- Recorded: 2026-09-17T04:53:55.040Z
+- Run ID: 2a6058b5-bc5a-4998-aeee-b95740d9e401
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=750 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
+
+### Run 7
+- Recorded: 2026-09-17T04:54:00.460Z
+- Run ID: ed00e77a-61f4-46ed-b499-7157ce6c5a75
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
+
+### Run 8
+- Recorded: 2026-09-17T04:54:11.598Z
+- Run ID: cdcf5080-6fbd-4f9b-a7ff-baa284ce49b0
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=750 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
+
+### Run 9
+- Recorded: 2026-09-17T04:54:17.008Z
+- Run ID: 15a3db2e-b613-46b5-af90-d43da737a393
+- Record revision: 920
+- Model hash recorded with run: fnv1a-596d5cb5
+- Prediction recorded with run:
+
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
+- Result status: recorded values shown below
+- Values: `requiredMoment=1350 N*m`; `dynamicPressure=980 Pa`; `deltaCm=0.06981317007977318 1`; `deltaMoment=1642.0057602762652 N*m`
 
 ## Submission instructions
 
