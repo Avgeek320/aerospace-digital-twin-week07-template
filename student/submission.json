@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "prediction",
       "verification",
       "claim",
       "reflection",
@@ -13,7 +12,7 @@
   },
   "record": {
     "id": "dd466b20-b9e4-4877-bf60-c6b0f1baba07",
-    "revision": "726",
+    "revision": "916",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -60,7 +59,7 @@
       "prediction": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Sign of Elevator Moment: Negative\nfor a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation \nM corelates to Vsquared\nreducing V reduces M/4 \n\nwing and body pitching moment, CG, drive opposite with elevator input\n"
       },
       "execution": {
         "suppliedBy": "automatic",

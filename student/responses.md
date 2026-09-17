@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: dd466b20-b9e4-4877-bf60-c6b0f1baba07
 
-- Record revision: 726
+- Record revision: 916
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -67,7 +67,15 @@ unknown q infinity delta Cm and M
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Sign of Elevator Moment: Negative
+for a trailing-edge UP deflection (which produces a downward force aft of CG, causing nose-UP rotation 
+M corelates to Vsquared
+reducing V reduces M/4 
+
+wing and body pitching moment, CG, drive opposite with elevator input
+
+```
 
 ### verification
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.
