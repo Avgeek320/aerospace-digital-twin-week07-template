@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "dd466b20-b9e4-4877-bf60-c6b0f1baba07",
-    "revision": "151",
+    "revision": "726",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -47,7 +45,7 @@
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "local linear effectiveness, invalidation is control surface stall or flow separation when the elevator over deflect3ed"
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "demand = (Iy)(target)-competing\ndynamic pressure is q infinity\ndelta Cm = Cmδ × δe\nCm = M/(qinfinity)S(C)\nM=(Cm)(Qinfinity)(S)(C)\n\nSupplied ρ V S C Cmδ, Iyy, q target\nunknown q infinity delta Cm and M\n\n"
       },
       "prediction": {
         "suppliedBy": "student",

@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: dd466b20-b9e4-4877-bf60-c6b0f1baba07
 
-- Record revision: 151
+- Record revision: 726
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -42,13 +42,26 @@ aft cg by x tail = -3m from the cg. which creates a rotation around the cg, resu
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
 
 **Student response:**
-_Missing — no response supplied._
+```
+local linear effectiveness, invalidation is control surface stall or flow separation when the elevator over deflect3ed
+```
 
 ### model
 **Prompt:** Write your demand, dynamic-pressure, coefficient and moment equations. Identify which quantities are supplied and which are unknown.
 
 **Student response:**
-_Missing — no response supplied._
+```
+demand = (Iy)(target)-competing
+dynamic pressure is q infinity
+delta Cm = Cmδ × δe
+Cm = M/(qinfinity)S(C)
+M=(Cm)(Qinfinity)(S)(C)
+
+Supplied ρ V S C Cmδ, Iyy, q target
+unknown q infinity delta Cm and M
+
+
+```
 
 ### prediction
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
