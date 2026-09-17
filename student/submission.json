@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "physics",
       "assumptions",
       "model",
       "prediction",
@@ -16,7 +15,7 @@
   },
   "record": {
     "id": "dd466b20-b9e4-4877-bf60-c6b0f1baba07",
-    "revision": "1",
+    "revision": "151",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -43,7 +42,7 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "aft cg by x tail = -3m from the cg. which creates a rotation around the cg, resulting in a nose up pitch moment "
       },
       "assumptions": {
         "suppliedBy": "student",

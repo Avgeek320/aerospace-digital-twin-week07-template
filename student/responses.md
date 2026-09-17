@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: dd466b20-b9e4-4877-bf60-c6b0f1baba07
 
-- Record revision: 1
+- Record revision: 151
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: physics, assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -34,7 +34,9 @@ Iy=5000 kg·m²; target=+0.12 rad/s²; competing=-750 N-m; density=1.225 kg/m³;
 **Prompt:** Explain why a downward force aft of the CG gives a positive nose-up moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+aft cg by x tail = -3m from the cg. which creates a rotation around the cg, resulting in a nose up pitch moment 
+```
 
 ### assumptions
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
